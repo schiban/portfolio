@@ -1,0 +1,27 @@
+body {
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 97%;
+    position: absolute;
+    display: table;
+}
+
+img {
+    filter: grayscale(50%);
+}
+
+div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+.alert {
+    color:#990000;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #303030;
+    text-decoration: none;
+}
