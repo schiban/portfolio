@@ -2,6 +2,7 @@
     --black: hsl(0, 0%, 10%);
     --grey: hsl(0, 0%, 50%);
     --white: hsl(0, 0%, 100%);
+    --temp: hsl(0, 0%, 100%);
 }
 
 * {
@@ -9,7 +10,6 @@
     color: var(--black);
     font-family: Calibri, sans-serif;
 }
-
 .container {
     display: grid;
     justify-content: center;

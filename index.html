@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>João Bandeira | Portfólio</title>
+    <base href="/">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="public/door-epic/ruffle.js"></script>
+    <!-- <script src="public/door-epic/ruffle.js"></script> -->
 </head>
 <body>
     <div class="container">
@@ -26,14 +27,10 @@
             </div>
         </div>
 
-        <!-- <div class="content">
-            <h1>JOÃO BANDEIRA</h1>
-            <h3><i>WEB DEVELOPER</i></h3>
-        </div> -->
         <div class="content-switch">
             <figure>
                 <img src="assets/img/d-luis-bridge.jpg" title="Ponte D. Luís I (de @martaguedes09)" alt="Ponte D. Luís I de Marta Guedes" class="banner portugal" width="300" loading="eager">
-                <img src="assets/img/d-luis-bridge.jpg" title="D. Luís I Bridge (by @martaguedes09)" alt="D. Luís I Bridge by Marta Guedes" class="banner england" width="300" loading="eager">
+                <img src="assets/img/d-luis-bridge.jpg" title="D. Luís I Bridge (by @martaguedes09)" alt="D. Luís I Bridge by Marta Guedes" class="banner england" width="300" loading="lazy">
                 <figcaption class="portugal">Ponte D. Luís I (de <a href="https://instagram.com/martaguedes09/" target="_blank" rel="noopener">@martaguedes09</a>)</figcaption>
                 <figcaption class="england">D. Luís I Bridge (by <a href="https://instagram.com/martaguedes09/" target="_blank" rel="noopener">@martaguedes09</a>)</figcaption>
             </figure>
@@ -168,31 +165,42 @@
                 </h3><hr>
             </div>
             <div class="projects">
-                <a href="/door-epic.html">
+                <!-- <a href="/door-epic.html">
                     <figure>
                         <img src="assets/img/door-epic-t.png" title="Door Epic" alt="door epic humbnail" width="145" height="121.8" loading="lazy">
                         <figcaption>DoorEpic (2013)</figcaption>
                     </figure>
-                </a>
+                </a> -->
                 <!-- <a href="/wise.html"> -->
-                    <figure>
+                    <!-- <figure>
                         <img src="assets/img/wise.png" title="Wise" alt="door epic thumbnail" width="145" height="121.8" loading="lazy">
                         <figcaption>Wise (2023)</figcaption>
-                    </figure>
+                    </figure> -->
                 <!-- </a> -->
+                <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0" width="206" height="165"><a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                <iframe frameborder="0" src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0" width="206" height="165"><a href="https://schiban.itch.io/wise">WISE by schiban</a></iframe>
             </div>
             <div class="content">
                 <a href="https://linkedin.com/in/joão-bandeira">
                     <i class="fa-brands fa-socials fa-linkedin-in" title="Linkedin"></i>
                 </a>
-                <a href="https://24timezones.com/current_time/portugal_vila_nova_de_gaia_clock.php" class="clock24" id="tz24-1689688877-c214973-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMCIsInNob3dzZWNvbmRzIjoiMCIsInNob3d0aW1lem9uZSI6IjEiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="clock Vila Nova De Gaia" target="_blank" rel="noopener">VN Gaia</a>
+                <a href="https://time.is/Vila_Nova_de_Gaia" id="time_is_link" rel="nofollow" style="font-size:12px">Time in Vila Nova de Gaia:</a>
+                <span id="Vila_Nova_de_Gaia_z714" style="font-size:12px"></span>
+
+
+
+                <!-- <a href="https://24timezones.com/current_time/portugal_vila_nova_de_gaia_clock.php" class="clock24" id="tz24-1689688877-c214973-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMCIsInNob3dzZWNvbmRzIjoiMCIsInNob3d0aW1lem9uZSI6IjEiLCJ0eXBlIjoiZCIsImxhbmciOiJlbiJ9" title="clock Vila Nova De Gaia" target="_blank" rel="noopener">VN Gaia</a> -->
                 <a href="https://deviantart.com/schiban">
                     <i class="fa-brands fa-socials fa-deviantart" title="DeviantArt"></i>
                 </a>
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script>
+    <!-- <script type="text/javascript" src="https://w.24timezones.com/l.js" async></script> -->
+    <script src="//widget.time.is/t.js"></script>
+    <script>
+    time_is_widget.init({Vila_Nova_de_Gaia_z714:{time_format:"hours:minutes"}});
+    </script>
     <script>
         $('.radiogroup').change(function(e) {
             const $this = $(this), $link = $("#url");
