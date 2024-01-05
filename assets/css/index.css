@@ -106,3 +106,17 @@ figcaption {
     -ms-transform: scale(1.05);
     transform: scale(1.05);
 }
+
+#time_is_link {
+    font-size: 12px;
+}
+
+#Vila_Nova_de_Gaia_z714 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.swiper {
+    width: 300px;
+    height: 300px;
+  }
