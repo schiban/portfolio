@@ -2,7 +2,8 @@
     --black: hsl(0, 0%, 10%);
     --grey: hsl(0, 0%, 50%);
     --white: hsl(0, 0%, 100%);
-    --temp: hsl(0, 0%, 100%);
+    --pink: hsl(0, 94%, 67%);
+    --blue: hsl(213, 28%, 75%);
 }
 
 * {
@@ -57,6 +58,14 @@ img {
 
 .skills p {
     text-align: center;
+}
+
+.skills div:hover i, .skills div:hover p {
+    color: var(--blue);
+}
+
+.skills img:hover, .content-switch figure:hover {
+    filter: sepia(60%);
 }
 
 h3 {
