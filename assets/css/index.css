@@ -60,13 +60,13 @@ img {
     text-align: center;
 }
 
-.skills div:hover i, .skills div:hover p {
+.skills div:hover i, .skills div:hover p, .skills div:hover svg {
     color: var(--blue);
 }
 
-.skills img:hover, .content-switch figure:hover {
+/* .skills img:hover, .content-switch figure:hover {
     filter: sepia(60%);
-}
+} */
 
 h3 {
     font-weight: 600;
