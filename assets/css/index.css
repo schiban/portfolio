@@ -14,12 +14,21 @@
 .container {
     display: grid;
     justify-content: center;
-    text-align: center;
 }
 
 .content {
     margin: 20px 0;
-    width: 300px;
+    text-align: center;
+}
+
+.content-left, .content-left h1, .content-left h3, .content-left h4, .content-left p {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.content-right, .content-right h1, .content-right h3, .content-right h4, .content-right p {
+    margin: 20px 0;
+    text-align: left;
 }
 
 .input-filters, .england {
@@ -36,10 +45,6 @@ input[name="filters"]:checked + label {
 }
 
 @media screen and (min-width: 1000px) {
-    .content {
-        width: 400px;
-    }
-
     .banner {
         width: 400px;
     }
@@ -74,7 +79,6 @@ h3 {
 
 h1, h3, h4, p {
     margin: 0;
-    text-align: right;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -124,8 +128,3 @@ figcaption {
     font-size: 12px;
     font-weight: 600;
 }
-
-.swiper {
-    width: 300px;
-    height: 300px;
-  }
