@@ -4,59 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Bandeira</title>
-    <meta name="description" content="João Bandeira is a web developer that's responsible for transforming good ideas into beautiful web pages."/>
-    <meta name="image" content="assets/img/favicon/favicon.ico"/>
-    <meta property="og:locale" content="en_US"/>
-    <meta property="og:site_name" content="João Bandeira"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="João Bandeira"/>
-    <meta property="og:description" content="João Bandeira is a web developer that's responsible for transforming good ideas into beautiful web pages."/>
-    <meta property="og:url" content="https://brittanychiang.com/"/>
-    <meta property="og:image" content="assets/img/favicon/favicon.ico"/>
+    <title>João Bandeira | Portfolio</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
-    <meta name="theme-color" content="#0f172a"/>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML in your document's head -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
     <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <style>
+        .sch-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            background-color:#f3f3f3
+        }
+
+        .card:hover i {
+            color:#adbdd1;
+        }
+
+        .card:hover svg {
+            filter: invert(90%) sepia(2%) saturate(5850%) hue-rotate(184deg) brightness(83%) contrast(96%);
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card-link {
+            display: block;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .card-link:hover {
+            text-decoration: underline;
+        }
+
+        .logout-link {
+            float: right;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .logout-link:hover {
+            text-decoration: underline;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-item {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
         
     </style>
 </head>
 <body>
-    <div class="container my-5">
-        <nav>
-            <div class="container">
-                <div class="col">
-                    <a class="navbar-brand" href="#">Hidden brand</a>
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">CONTACT</a>
-                        </li>
-                    </ul>
-                    <div class="skills">
-                        <div class="col-12 col-md-11 btn-cta trigger-opt-item">
-                            <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
-                            <label for="check-1">
-                                <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa de Freepik - Flaticon">
-                            </label>
-                            <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
-                            <label for="check-2">
-                                <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica de Freepik - Flaticon">
-                            </label>
+    <div class="container border border-1 border-warning border-opacity-50 rounded-3 my-5" style="background-color: #ffffff;">
+        <nav class="navbar-nav">
+            <div class="container-fluid text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a class="navbar-brand" href="#">Hidden brand</a>
+                    </div>
+                    <div class="col">
+                        <ul class="navbar-nav d-flex mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="skills">
+                            <div class="col-12 col-md-11 btn-cta trigger-opt-item">
+                                <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
+                                <label for="check-1">
+                                    <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa de Freepik - Flaticon">
+                                </label>
+                                <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
+                                <label for="check-2">
+                                    <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica de Freepik - Flaticon">
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -210,23 +265,15 @@
                     <div class="col">
                         <div class="card">
                             <a href="https://wordpress.com">
-                                <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" class="fa-skills" width="25" height="25" alt="phpMyAdmin">
+                                <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" width="25" height="25" alt="">
                                 <p>phpMyAdmin</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://getbootstrap.com/">
-                                <i class="fa-brands fa-skills fa-bootstrap" width="25" height="25" alt="Bootstrap"></i>
-                                <p>Boostrap</p>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-3">
+            <div class="sch-container mt-3">
                 <div class="content">
                     <h2>
                         <span class="portugal">Projetos</span>
@@ -234,8 +281,8 @@
                     </h2><hr>
                 </div>
 
-                <div class="row skills">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-md-3">
                         <div class="card">
                             <figure>
                                 <iframe frameborder="0" src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="Wise by Schiban" width="206" height="165">
@@ -244,7 +291,7 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3">
                         <div class="card">
                             <figure>
                                 <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
@@ -253,7 +300,7 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3">
                         <div class="card">
                             <figure>
                                 <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
@@ -262,7 +309,7 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3">
                         <div class="card">
                             <figure>
                                 <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
@@ -271,7 +318,7 @@
                             </figure>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3">
                         <div class="card">
                             <figure>
                                 <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
