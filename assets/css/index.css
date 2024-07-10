@@ -1,16 +1,27 @@
 :root {
+
+    --body-background: hsl(215, 15%, 16%);
     --black: hsl(0, 0%, 10%);
     --grey: hsl(0, 0%, 50%);
     --white: hsl(0, 0%, 100%);
     --pink: hsl(0, 94%, 67%);
-    --blue: hsl(213, 28%, 75%);
+    --blue: hsl(213, 100%, 79%);
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 * {
-    background-color: var(--white);
-    color: var(--black);
+    color: var(--white);
     font-family: Calibri, sans-serif;
+    text-align: left;
 }
+
+body {
+    background-color: var(--body-background);
+}
+
+
 .container {
     display: grid;
     justify-content: center;
@@ -127,4 +138,50 @@ figcaption {
 #Vila_Nova_de_Gaia_z714 {
     font-size: 12px;
     font-weight: 600;
+}
+
+
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background-color: var(--grey);
+}
+
+.card:hover i {
+    color:#adbdd1;
+}
+
+.card:hover svg {
+    filter: invert(90%) sepia(2%) saturate(5850%) hue-rotate(184deg) brightness(83%) contrast(96%);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.logout-link {
+    float: right;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.logout-link:hover {
+    text-decoration: underline;
 }
