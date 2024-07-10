@@ -15,59 +15,62 @@
     <meta property="og:url" content="https://brittanychiang.com/"/>
     <meta property="og:image" content="assets/img/favicon/favicon.ico"/>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
-    <meta name="theme-color" content="#0f172a"/>
+    <meta name="theme-color" content="hsl(215, 15%, 16%)"/>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML in your document's head -->
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <style>
-        
-    </style>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container my-5">
-        <nav>
-            <div class="container">
-                <div class="col">
-                    <a class="navbar-brand" href="#">Hidden brand</a>
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">CONTACT</a>
-                        </li>
-                    </ul>
-                    <div class="skills">
-                        <div class="col-12 col-md-11 btn-cta trigger-opt-item">
-                            <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
-                            <label for="check-1">
-                                <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa de Freepik - Flaticon">
-                            </label>
-                            <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
-                            <label for="check-2">
-                                <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica de Freepik - Flaticon">
-                            </label>
+    <div class="container my-5 mx-auto">
+        <div class="row">
+            <div class="col-5 offset-1 my-5">
+                <header>
+                    <nav>
+                        <h1>João Bandeira</h1>
+                        <h2>Web Developer</h2>
+                        <p>I'm a Web and Software Developer based in Vila Nova de Gaia.</p>
+                        <ul>
+                            <li>
+                                <a>ABOUT</a>
+                            </li>
+                            <li>
+                                <a>EXPERIENCE</a>
+                            </li>
+                            <li>
+                                <a>PROJECTS</a>
+                            </li>
+                            <li>
+                                <a>CONTACT</a>
+                            </li>
+                        </ul>
+                        <div class="skills mb-auto">
+                            <div class="col-12 col-md-11 btn-cta trigger-opt-item">
+                                <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
+                                <label for="check-1">
+                                    <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa">
+                                </label>
+                                <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
+                                <label for="check-2">
+                                    <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica">
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </nav>
+                </header>
             </div>
-        </nav>
-        
-        
-        
-        <div class="row content-switch">
-            <div class="col-6">
-                <div class="content-left">
+            
+            <div class="col-5 my-5">
+                <div class="content-switch">
                     <h3>
                         <span class="portugal">Perfil</span>
                         <span class="england">Profile</span>
@@ -85,10 +88,7 @@
                         <span class="england">I'm 28 years old and live in Vila Nova de Gaia.</span>
                     </p>
                 </div>
-            </div>
-        
-            <div class="col-6">
-                <div class="content-right">
+                <div class="content-switch">
                     <h3>
                         <span class="portugal">Experiência</span>
                         <span class="england">Experience</span>
@@ -101,209 +101,210 @@
                         <span class="england">Feb 2022 - Current</span>
                     </p><br>
                 </div>
-            </div>
-            
-            <div class="sch-container">
-                <div class="content">
-                    <h3>
-                        <span class="portugal">Conhecimentos</span>
-                        <span class="england">Skills</span>
-                    </h3><hr>
-                </div>
-                <div class="row skills">
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-                                <i class="fa-brands fa-skills fa-html5" title="HTML"></i>
-                                <p>HTML</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
-                                <i class="fa-brands fa-skills fa-css3-alt" title="CSS"></i>
-                                <p>CSS</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-                                <i class="fa-brands fa-skills fa-js" title="JavaScript"></i>
-                                <p>JavaScript</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://www.php.net">
-                                <i class="fa-brands fa-skills fa-php" title="PHP"></i>
-                                <p>PHP</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://www.w3schools.com/sql">
-                                <i class="fa-solid fa-skills fa-database" title="SQL"></i>
-                                <p>SQL</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://laravel.com">
-                                <i class="fa-brands fa-skills fa-laravel" title="Laravel"></i>
-                                <p>Laravel</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://github.com">
-                                <i class="fa-brands fa-skills fa-github" title="GitHub"></i>
-                                <p>GitHub</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://learn.microsoft.com/en-us/dotnet/csharp">
-                                <i class="fa-brands fa-skills fa-c-sharp" title="C#">
-                                    <svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
-                                        <path d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z"></path>
-                                    </svg>
-                                </i>
-                                <p>C#</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://unity.com">
-                                <i class="fa-brands fa-skills fa-unity" title="Unity"></i>
-                                <p>Unity</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://www.aseprite.org">
-                                <i class="fa-brands fa-skills fa-aseprite" title="Aseprite">
-                                    <svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
-                                        <path d="M4.006 0v1.6h15.988V0zm15.988 1.6v1.6h1.6V1.6zm1.6 1.6v14.4h-1.6v1.6H4.006v-1.6h-1.6V3.2H.809v17.6h1.599v1.6h1.599V24h15.988v-1.6h1.6v-1.6h1.598V3.2zm-19.187 0h1.599V1.6h-1.6zm4.796 3.2v6.4h1.6V6.4zm7.995 0v6.4h1.599V6.4z"></path>
-                                    </svg>
-                                </i>
-                                <p>Aseprite</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://wordpress.com">
-                                <i class="fa-brands fa-skills fa-wordpress" title="Wordpress"></i>
-                                <p>WordPress</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://wordpress.com">
-                                <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" class="fa-skills" width="25" height="25" alt="phpMyAdmin">
-                                <p>phpMyAdmin</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="https://getbootstrap.com/">
-                                <i class="fa-brands fa-skills fa-bootstrap" width="25" height="25" alt="Bootstrap"></i>
-                                <p>Boostrap</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="mt-3">
-                <div class="content">
-                    <h2>
-                        <span class="portugal">Projetos</span>
-                        <span class="england">Projects</span>
-                    </h2><hr>
+                
+                <div class="sch-container">
+                    <div class="content">
+                        <h3>
+                            <span class="portugal">Conhecimentos</span>
+                            <span class="england">Skills</span>
+                        </h3><hr>
+                    </div>
+                    <div class="row skills">
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                                    <i class="fa-brands fa-skills fa-html5" title="HTML"></i>
+                                    <p>HTML</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                                    <i class="fa-brands fa-skills fa-css3-alt" title="CSS"></i>
+                                    <p>CSS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                                    <i class="fa-brands fa-skills fa-js" title="JavaScript"></i>
+                                    <p>JavaScript</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://www.php.net">
+                                    <i class="fa-brands fa-skills fa-php" title="PHP"></i>
+                                    <p>PHP</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://www.w3schools.com/sql">
+                                    <i class="fa-solid fa-skills fa-database" title="SQL"></i>
+                                    <p>SQL</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://laravel.com">
+                                    <i class="fa-brands fa-skills fa-laravel" title="Laravel"></i>
+                                    <p>Laravel</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://github.com">
+                                    <i class="fa-brands fa-skills fa-github" title="GitHub"></i>
+                                    <p>GitHub</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://learn.microsoft.com/en-us/dotnet/csharp">
+                                    <i class="fa-brands fa-skills fa-c-sharp" title="C#">
+                                        <svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 50 50">
+                                            <path d="M 25 2 C 24.285156 2 23.570313 2.179688 22.933594 2.539063 L 6.089844 12.003906 C 4.800781 12.726563 4 14.082031 4 15.535156 L 4 34.464844 C 4 35.917969 4.800781 37.273438 6.089844 37.996094 L 22.933594 47.460938 C 23.570313 47.820313 24.285156 48 25 48 C 25.714844 48 26.429688 47.820313 27.066406 47.460938 L 43.910156 38 C 45.199219 37.273438 46 35.917969 46 34.464844 L 46 15.535156 C 46 14.082031 45.199219 12.726563 43.910156 12.003906 L 27.066406 2.539063 C 26.429688 2.179688 25.714844 2 25 2 Z M 25 13 C 28.78125 13 32.277344 14.753906 34.542969 17.738281 L 30.160156 20.277344 C 28.84375 18.835938 26.972656 18 25 18 C 21.140625 18 18 21.140625 18 25 C 18 28.859375 21.140625 32 25 32 C 26.972656 32 28.84375 31.164063 30.160156 29.722656 L 34.542969 32.261719 C 32.277344 35.246094 28.78125 37 25 37 C 18.382813 37 13 31.617188 13 25 C 13 18.382813 18.382813 13 25 13 Z M 35 20 L 37 20 L 37 22 L 39 22 L 39 20 L 41 20 L 41 22 L 43 22 L 43 24 L 41 24 L 41 26 L 43 26 L 43 28 L 41 28 L 41 30 L 39 30 L 39 28 L 37 28 L 37 30 L 35 30 L 35 28 L 33 28 L 33 26 L 35 26 L 35 24 L 33 24 L 33 22 L 35 22 Z M 37 24 L 37 26 L 39 26 L 39 24 Z"></path>
+                                        </svg>
+                                    </i>
+                                    <p>C#</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://unity.com">
+                                    <i class="fa-brands fa-skills fa-unity" title="Unity"></i>
+                                    <p>Unity</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://www.aseprite.org">
+                                    <i class="fa-brands fa-skills fa-aseprite" title="Aseprite">
+                                        <svg class="fa-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
+                                            <path d="M4.006 0v1.6h15.988V0zm15.988 1.6v1.6h1.6V1.6zm1.6 1.6v14.4h-1.6v1.6H4.006v-1.6h-1.6V3.2H.809v17.6h1.599v1.6h1.599V24h15.988v-1.6h1.6v-1.6h1.598V3.2zm-19.187 0h1.599V1.6h-1.6zm4.796 3.2v6.4h1.6V6.4zm7.995 0v6.4h1.599V6.4z"></path>
+                                        </svg>
+                                    </i>
+                                    <p>Aseprite</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://wordpress.com">
+                                    <i class="fa-brands fa-skills fa-wordpress" title="Wordpress"></i>
+                                    <p>WordPress</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://wordpress.com">
+                                    <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" class="fa-skills" width="25" height="25" alt="phpMyAdmin">
+                                    <p>phpMyAdmin</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <a href="https://getbootstrap.com/">
+                                    <i class="fa-brands fa-skills fa-bootstrap" width="25" height="25" alt="Bootstrap"></i>
+                                    <p>Boostrap</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row skills">
-                    <div class="col">
-                        <div class="card">
-                            <figure>
-                                <iframe frameborder="0" src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="Wise by Schiban" width="206" height="165">
-                                    <a href="https://schiban.itch.io/wise">WISE by schiban</a></iframe>
-                                <figcaption>Wise (2023)</figcaption>
-                            </figure>
-                        </div>
+                <div class="mt-3">
+                    <div class="content">
+                        <h2>
+                            <span class="portugal">Projetos</span>
+                            <span class="england">Projects</span>
+                        </h2><hr>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <figure>
-                                <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                    <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                <figcaption>Door Epic (2013)</figcaption>
-                            </figure>
+
+                    <div class="row skills">
+                        <div class="col">
+                            <div class="card">
+                                <figure>
+                                    <iframe frameborder="0" src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="Wise by Schiban" width="206" height="165">
+                                        <a href="https://schiban.itch.io/wise">WISE by schiban</a></iframe>
+                                    <figcaption>Wise (2023)</figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <figure>
-                                <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                    <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                <figcaption>Door Epic (2013)</figcaption>
-                            </figure>
+                        <div class="col">
+                            <div class="card">
+                                <figure>
+                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
+                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                                    <figcaption>Door Epic (2013)</figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <figure>
-                                <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                    <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                <figcaption>Door Epic (2013)</figcaption>
-                            </figure>
+                        <div class="col">
+                            <div class="card">
+                                <figure>
+                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
+                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                                    <figcaption>Door Epic (2013)</figcaption>
+                                </figure>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <figure>
-                                <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                    <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                <figcaption>Door Epic (2013)</figcaption>
-                            </figure>
+                        <div class="col">
+                            <div class="card">
+                                <figure>
+                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
+                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                                    <figcaption>Door Epic (2013)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <figure>
+                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
+                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                                    <figcaption>Door Epic (2013)</figcaption>
+                                </figure>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="content">
-                <div class="row weather-info">
-                    <h2 id="location"></h2>
-                    <div class="col-4">
-                        <h2 id="country"></h2>
-                        <div id="weatherIcon" class="weather-icon"></div>
-                    </div>
-                    <div class="col-6">
-                        <p id="description"></p>
-                        <p id="temperature"></p>
-                        <p id="feelsLike"></p>
-                        <div class="forecast-info" id="forecastInfo"></div>
+                
+                <div class="content">
+                    <div class="row weather-info">
+                        <h2 id="location"></h2>
+                        <div class="col-4">
+                            <h2 id="country"></h2>
+                            <div id="weatherIcon" class="weather-icon"></div>
+                        </div>
+                        <div class="col-6">
+                            <p id="description"></p>
+                            <p id="temperature"></p>
+                            <p id="feelsLike"></p>
+                            <div class="forecast-info" id="forecastInfo"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="content">
-                <a href="https://linkedin.com/in/joão-bandeira">
-                    <i class="fa-brands fa-socials fa-linkedin-in" title="Linkedin"></i>
-                </a>
-                <a href="https://time.is/Vila_Nova_de_Gaia" id="time_is_link" rel="nofollow">TIME IN VILA NOVA DE GAIA: </a>
-                <span id="Vila_Nova_de_Gaia_z714"></span>
+                <div class="content">
+                    <a href="https://linkedin.com/in/joão-bandeira">
+                        <i class="fa-brands fa-socials fa-linkedin-in" title="Linkedin"></i>
+                    </a>
+                    <a href="https://time.is/Vila_Nova_de_Gaia" id="time_is_link" rel="nofollow">TIME IN VILA NOVA DE GAIA: </a>
+                    <span id="Vila_Nova_de_Gaia_z714"></span>
+                </div>
             </div>
         </div>
     </div>

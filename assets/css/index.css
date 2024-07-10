@@ -18,9 +18,16 @@
 }
 
 body {
-    background-color: var(--body-background);
+    background-color: var(--body-background)!important;
 }
 
+nav {
+    position: fixed;
+}
+
+.sch-content {
+    margin: 100px auto;
+}
 
 .container {
     display: grid;
