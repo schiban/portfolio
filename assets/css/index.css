@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('assets/fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+
 :root {
 
     --body-background: hsl(215, 15%, 16%);
@@ -13,7 +27,7 @@
 
 * {
     color: var(--white);
-    font-family: Calibri, sans-serif;
+    font-family: 'OpenSans', sans-serif;
     text-align: left;
 }
 
