@@ -13,30 +13,26 @@
   }
 
 :root {
-
-    --body-background: hsl(215, 15%, 16%);
-    --black: hsl(0, 0%, 10%);
-    --grey: hsl(0, 0%, 50%);
-    --white: hsl(0, 0%, 100%);
-    --pink: hsl(0, 94%, 67%);
-    --blue: hsl(213, 100%, 79%);
+    --background: hsl(34, 23%, 88%);
+         --black: hsl(0, 0%, 10%);
+         --white: hsl(0, 0%, 100%);
+          --font: hsl(15, 6%, 13%);
+          --grey: hsl(0, 0%, 50%);
+          --pink: hsl(0, 94%, 67%);
+          --blue: hsl(213, 100%, 79%);
 
     font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 
 * {
-    color: var(--white);
+    color: var(--font);
     font-family: 'OpenSans', sans-serif;
     text-align: left;
 }
 
 body {
-    background-color: var(--body-background)!important;
-}
-
-nav {
-    position: fixed;
+    background-color: var(--background)!important;
 }
 
 .sch-content {
@@ -206,3 +202,47 @@ figcaption {
 .logout-link:hover {
     text-decoration: underline;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0
+}
+
+header {
+    position: sticky;
+}
+
+@media (min-width: 1024px) {
+    header .row {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        justify-content: space-between;
+        flex-direction: column;
+        max-height: 100vh;
+        display: flex;
+        top: 0;
+        position: fixed;
+    }
+
+    header .socials {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        justify-content: space-between;
+        flex-direction: column;
+        max-height: 100vh;
+        display: flex;
+        bottom: 0;
+        position: fixed;
+    }
+}
+
