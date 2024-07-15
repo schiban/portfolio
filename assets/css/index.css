@@ -1,43 +1,59 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url('assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-family: 'JetBrainsMono';
+    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
 }
-
 @font-face {
-    font-family: 'OpenSans';
-    src: url('assets/fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-family: 'JetBrainsMono';
+    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-ThinItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
     font-style: normal;
-    font-weight: 700;
-  }
-
+    font-weight: bold;
+}
 :root {
-    --background: hsl(34, 23%, 88%);
-         --black: hsl(0, 0%, 10%);
-         --white: hsl(0, 0%, 100%);
-          --font: hsl(15, 6%, 13%);
-          --grey: hsl(0, 0%, 50%);
-          --pink: hsl(0, 94%, 67%);
-          --blue: hsl(213, 100%, 79%);
-
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    --background:hsl(240, 3%, 15%);
+    --cards:hsl(240, 3%, 13%);
+    --black:hsl(0, 0%, 10%);
+    --white:hsl(0, 0%, 100%);
+    --font:hsl(34, 23%, 88%);
+    --grey:hsl(0, 0%, 50%);
+    --pink:hsl(0, 94%, 67%);
+    --blue:hsl(213, 100%, 79%);
+    --gold:hsl(221, 100%, 63%);
 }
-
 * {
-    color: var(--font);
-    font-family: 'OpenSans', sans-serif;
-    text-align: left;
+    font-family:'JetBrainsMono';
+    color:var(--font);
+    text-align:left;
+    hyphens:auto;
+}
+body {
+    background-color:var(--background)!important;
+}
+h1 {
+    font-weight:bold!important;
 }
 
-body {
-    background-color: var(--background)!important;
+.my-6 {
+    margin-top: 7.5vh!important;
+    margin-bottom: 7.5vh!important;
 }
 
 .content {
-    margin: 20px 0;
-    text-align: center;
+    margin:20px 0;
+    text-align:center;
 }
 
 .content-left, .content-left h1, .content-left h3, .content-left h4, .content-left p {
@@ -132,16 +148,40 @@ figcaption {
     font-weight: 600;
 }
 
+.description-block {
+    border-radius: 10px;
+    background-color: var(--background)!important;
+}
+
+.description-block:hover {
+    background-color: var(--cards)!important;
+    cursor:pointer;
+}
+
+.description-block p {
+    line-height: 2.5;
+}
+
+.description-block span {
+    background-color: var(--gold);
+    padding: 3px 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: var(--background)
+}
+
 
 .card {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--background)!important;
 }
 
 .card:hover {
-    background-color: var(--grey);
+    background-color: var(--black)!important;
+    cursor:pointer;
 }
 
 .card:hover i {
@@ -197,18 +237,16 @@ figcaption {
 }
 
 @media (min-width: 1024px) {
+    .header-content {
+        position: fixed;
+        margin-right: 60%;
+    }
     .header-content .row:nth-of-type(1) { 
         top: 0;
         position: sticky!important;
-     }
+    }
     .header-content .row:nth-of-type(2) { 
         bottom: 0;
         position: sticky!important;
-     }
-
-    .header-content {
-        position: fixed;
-        margin-right: 50%;
     }
 }
-
