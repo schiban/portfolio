@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
+    src: url('../assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2');
+    src: url('../assets/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2');
     font-style: italic;
     font-weight: lighter;
 }
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-ThinItalic.woff2') format('woff2');
+    src: url('../assets/fonts/JetBrainsMono/JetBrainsMono-ThinItalic.woff2') format('woff2');
     font-style: italic;
     font-weight: lighter;
 }
 @font-face {
     font-family: 'JetBrainsMono';
-    src: url('/assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
+    src: url('../assets/fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
     font-style: normal;
     font-weight: bold;
 }
