@@ -12,63 +12,162 @@
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="João Bandeira"/>
     <meta property="og:description" content="João Bandeira is a web developer that's responsible for transforming good ideas into beautiful web pages."/>
-    <meta property="og:url" content="https://brittanychiang.com/"/>
-    <meta property="og:image" content="assets/img/favicon/favicon.ico"/>
+    <meta property="og:url" content="https://schiban.github.io/portfolio/"/>
+    <meta property="og:image" content="./assets/img/favicon/favicon.ico"/>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
     <meta name="theme-color" content="hsl(215, 15%, 16%)"/>
-
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome-free-5.15.4-web/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.5.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.5.2-web/css/brands.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.5.2-web/css/solid.css">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <style>
-        .my-6 {
-            margin-top: 7.5vh !important;
-            margin-bottom: 7.5vh !important;
-        }
-    </style>
-    <div class="container my-6 mx-auto">
+    <div class="container content-switch my-6 mx-auto">
+        <div class="row">
+            <div class="col-2 offset-10 col-lg-1 offset-lg-11 skills">
+                <div class="col-12 btn-cta trigger-opt-item">
+                    <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
+                    <label for="check-1">PT
+                        <!-- <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa"> -->
+                    </label>
+                    <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
+                    <label for="check-2">EN
+                        <!-- <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica"> -->
+                    </label>
+                </div>
+            </div>
+        </div>
         <div class="row mx-auto">
-            <div class="col-12 col-lg-6 my-6" style="border: 1px solid white!important">
+            <div class="col-12 col-lg-5 my-6">
                 <div class="header-content">
-                    <h1>João Bandeira</h1>
-                    <h2>Web Developer</h2>
-                    <p>I'm a Web and Software Developer based in Vila Nova de Gaia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quaerat perspiciatis? Esse doloribus laboriosam dolorum error, reprehenderit fuga omnis minima, in porro facere deleniti eligendi sunt optio ab eos ex.</p>
-                    <ul>
-                        <li><a>ABOUT</a></li>
-                        <li><a>EXPERIENCE</a></li>
-                        <li><a>PROJECTS</a></li>
-                        <li><a>CONTACT</a></li>
-                    </ul>
-                    <div class="skills mb-auto">
-                        <div class="col-12 col-md-11 btn-cta trigger-opt-item">
-                            <input type="radio" name="filters" value="pt" class="input-filters" id="check-1" checked>
-                            <label for="check-1">
-                                <img draggable="false" src="assets/img/portugal.png" width="20" height="20" alt="Bandeira Portuguesa">
-                            </label>
-                            <input type="radio" name="filters" value="uk" class="input-filters" id="check-2">
-                            <label for="check-2">
-                                <img draggable="false" src="assets/img/united-kingdom.png" width="20" height="20" alt="Bandeira Britânica">
-                            </label>
+                    <div class="row">
+                        <h1>João Bandeira</h1>
+                        <h2>Web Developer</h2>
+                        <div>
+                            <p class="portugal">Sou um Web Developer de Vila Nova de Gaia.</p>
+                            <ul class="portugal">
+                                <li><a href="#about">SOBRE</a></li>
+                                <li><a href="#experience">EXPERIÊNCIA</a></li>
+                                <li><a href="#projects">PROJETOS</a></li>
+                                <li><a href="contacts">CONTATO</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="england">I'm a Web and Software Developer based in Vila Nova de Gaia.</p>
+                            <ul class="england">
+                                <li><a href="#about">ABOUT</a></li>
+                                <li><a href="#experience">EXPERIENCE</a></li>
+                                <li><a href="#projects">PROJECTS</a></li>
+                                <li><a href="contacts">CONTACT</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <p class="noselect">João Bandeira 2024</p>  
+                    
+                    <div class="row my-lg-5">
+                        <div class="col-1">
+                            <a href="https://linkedin.com/in/joão-bandeira" target="_blank">
+                                <i class="fa-brands fa-skills fa-linkedin" title="LinkedIn"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://github.com/schiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-github" title="GitHub"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://freecodecamp.org/schiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-free-code-camp" title="freeCodeCamp"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://schiban.itch.io" target="_blank">
+                                <i class="fa-brands fa-skills fa-itch-io" title="itch.io"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://goodreads.com/schiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-goodreads" title="goodreads"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://instagram.com/mrschiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-instagram" title="Instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://twitter.com/mrschiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-x-twitter" title="Twitter X"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://twitter.com/mrschiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-reddit" title="Reddit"></i>
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a href="https://twitter.com/mrschiban" target="_blank">
+                                <i class="fa-brands fa-skills fa-spotify" title="Spotify"></i>
+                            </a>
+                        </div>         
+                        <!-- <p class="noselect">João Bandeira 2024</p>   -->
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-6 my-6" style="border:1px solid white;">
+            <div class="col-12 col-lg-7 my-6">
+                <div class="container-fluid">
+                    <div class="row mt-0 mb-5 p-0" id="about">
+                        <div class="col-12">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat doloremque consequatur corrupti quibusdam esse expedita eum ea impedit maiores ipsam, delectus quas harum a blanditiis accusantium ab iure? Dolorum, temporibus?</p>
+                            <p>Praesentium cumque numquam corporis rem officia porro tempora. A, sequi libero, facilis quod enim molestias recusandae magnam in atque illo sit vero soluta corrupti. Itaque numquam libero recusandae qui error?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sapiente architecto in, nostrum ab, consequuntur nam aliquam laborum molestiae quis ea dolores repudiandae obcaecati quasi non magnam. Nemo, minima numquam?</p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="row description-block mt-0 mb-5 p-2" id="experience">
+                        <div class="col-3">
+                            <p>2022 - Atualmente</p>
+                        </div>
+                        <div class="col-9">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non assumenda similique aut voluptatem voluptatum illo vero perspiciatis repudiandae, nam reprehenderit delectus possimus minima nostrum maiores reiciendis, eos ullam sunt veritatis?
+                        </div>
+                        <div class="col-9 offset-3 mt-3">
+                            <p>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>jQuery</span>
+                                <span>Bootstrap</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row description-block mt-0 mb-5 p-2">
+                        <div class="col-3">
+                            <p>2022 - Atualmente</p>
+                        </div>
+                        <div class="col-9">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non assumenda similique aut voluptatem voluptatum illo vero perspiciatis repudiandae, nam reprehenderit delectus possimus minima nostrum maiores reiciendis, eos ullam sunt veritatis?
+                        </div>
+                        <div class="col-9 offset-3 mt-3">
+                            <p>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="content-switch">
                     <p class="portugal">Licenciado em Engenharia Informática com foco em desenvolvimento de aplicações e soluções web.</p>
                     <p class="england">Graduated in Computer Science Engineering with a focus on developing software and web solutions.
@@ -194,7 +293,7 @@
                         </div>
                         <div class="col">
                             <div class="card">
-                                <a href="https://wordpress.com">
+                                <a href="https://www.phpmyadmin.net">
                                     <i class="fa-brands fa-skills fa-wordpress" title="Wordpress"></i>
                                     <p>WordPress</p>
                                 </a>
@@ -203,7 +302,9 @@
                         <div class="col">
                             <div class="card">
                                 <a href="https://wordpress.com">
-                                    <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" class="fa-skills" width="25" height="25" alt="phpMyAdmin">
+                                    <i class="fa-brands fa-skills" title="phpMyAdmin">
+                                        <img src="https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg" width="25" height="25" alt="phpMyAdmin">
+                                    </i>
                                     <p>phpMyAdmin</p>
                                 </a>
                             </div>
@@ -220,7 +321,7 @@
                 </div>
 
                 <div class="mt-3">
-                    <div class="content">
+                    <div class="content" id="projects">
                         <h2>
                             <span class="portugal">Projetos</span>
                             <span class="england">Projects</span>
@@ -230,45 +331,21 @@
                     <div class="row skills">
                         <div class="col">
                             <div class="card">
-                                <figure>
-                                    <iframe frameborder="0" src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="Wise by Schiban" width="206" height="165">
-                                        <a href="https://schiban.itch.io/wise">WISE by schiban</a></iframe>
+                                <figure class="mx-auto">
+                                    <iframe src="https://itch.io/embed/2274555?linkback=true&amp;border_width=0&amp;bg_color=252527&amp;fg_color=e7e1d9&amp;link_color=252527&amp;border_color=252527" width="206" height="165" frameborder="0" title="Wise by Schiban" >
+                                        <a href="https://schiban.itch.io/wise">WISE by Schiban</a>
+                                    </iframe>
                                     <figcaption>Wise (2023)</figcaption>
                                 </figure>
+                                
                             </div>
                         </div>
                         <div class="col">
                             <div class="card">
-                                <figure>
-                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                    <figcaption>Door Epic (2013)</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <figure>
-                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                    <figcaption>Door Epic (2013)</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <figure>
-                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
-                                    <figcaption>Door Epic (2013)</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <figure>
-                                    <iframe frameborder="0" src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;link_color=afbfd2" title="DoorEpic by Schiban" width="206" height="165">
-                                        <a href="https://schiban.itch.io/doorepic">DoorEpic by Schiban</a></iframe>
+                                <figure class="mx-auto">
+                                    <iframe src="https://itch.io/embed/1761340?linkback=true&amp;border_width=0&amp;bg_color=252527&amp;fg_color=e7e1d9&amp;link_color=252527&amp;border_color=252527" width="206" height="165" frameborder="0" title="DoorEpic by Schiban">
+                                        <a href="https://schiban.itch.io/doorepic">Door Epic by Schiban</a>
+                                    </iframe>
                                     <figcaption>Door Epic (2013)</figcaption>
                                 </figure>
                             </div>
@@ -291,10 +368,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content">
-                    <a href="https://linkedin.com/in/joão-bandeira">
-                        <i class="fa-brands fa-socials fa-linkedin-in" title="Linkedin"></i>
-                    </a>
+                <div class="content" id="contacts">
                     <a href="https://time.is/Vila_Nova_de_Gaia" id="time_is_link" rel="nofollow">TIME IN VILA NOVA DE GAIA: </a>
                     <span id="Vila_Nova_de_Gaia_z714"></span>
                 </div>
@@ -305,13 +379,13 @@
     <script>
         time_is_widget.init({Vila_Nova_de_Gaia_z714:{time_format:"hours:minutes"}});
     </script>
-    <script>
+    <!-- <script>
         $('.radiogroup').change(function(e) {
             const $this = $(this), $link = $("#url");
             $link.html($this.val());
             $link.attr("href", $this.attr("data-url"));
         });
-    </script>
-    <script src="assets/js/script.js"></script>
+    </script> -->
+    <script src="assets/js/index.js"></script>
 </body>
 </html>

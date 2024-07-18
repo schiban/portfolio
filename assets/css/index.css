@@ -1,43 +1,60 @@
 @font-face {
-    font-family: 'OpenSans';
-    src: url('assets/fonts/OpenSans-Regular-webfont.woff') format('woff');
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
 }
-
 @font-face {
-    font-family: 'OpenSans';
-    src: url('assets/fonts/OpenSans-Bold-webfont.woff') format('woff');
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-Italic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-ThinItalic.woff2') format('woff2');
+    font-style: italic;
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('../fonts/JetBrainsMono/JetBrainsMono-Bold.woff2') format('woff2');
     font-style: normal;
-    font-weight: 700;
-  }
-
+    font-weight: bold;
+}
 :root {
-    --background: hsl(34, 23%, 88%);
-         --black: hsl(0, 0%, 10%);
-         --white: hsl(0, 0%, 100%);
-          --font: hsl(15, 6%, 13%);
-          --grey: hsl(0, 0%, 50%);
-          --pink: hsl(0, 94%, 67%);
-          --blue: hsl(213, 100%, 79%);
-
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    --background:hsl(240, 3%, 15%);
+    --cards:hsl(240, 3%, 13%);
+    --black:hsl(0, 0%, 10%);
+    --white:hsl(0, 0%, 100%);
+    --font:hsl(34, 23%, 88%);
+    --grey:hsl(0, 0%, 50%);
+    --pink:hsl(0, 94%, 67%);
+    --blue:hsl(213, 100%, 79%);
+    --gold:hsl(221, 100%, 63%);
 }
-
 * {
-    color: var(--font);
-    font-family: 'OpenSans', sans-serif;
-    text-align: left;
+    font-family:'JetBrainsMono';
+    color:var(--font);
+    text-align:left;
+    hyphens:auto;
+}
+body {
+    background-color:var(--background)!important;
+    scroll-behavior: smooth;
+}
+h1 {
+    font-weight:bold!important;
 }
 
-body {
-    background-color: var(--background)!important;
+.my-6 {
+    margin-top: 7.5vh!important;
+    margin-bottom: 7.5vh!important;
 }
 
 .content {
-    margin: 20px 0;
-    text-align: center;
+    margin:20px 0;
+    text-align:center;
 }
 
 .content-left, .content-left h1, .content-left h3, .content-left h4, .content-left p {
@@ -107,7 +124,7 @@ figcaption {
 .fa-skills {
     font-size: 25px;
     padding: 20px;
-    opacity:0.5;
+    opacity:0.7;
 }
 
 .fa-socials {
@@ -132,16 +149,40 @@ figcaption {
     font-weight: 600;
 }
 
+.description-block {
+    background-color: var(--background)!important;
+    border-radius: 10px;
+}
+
+.description-block:hover {
+    background-color: var(--cards)!important;
+    cursor: pointer;
+}
+
+.description-block p {
+    line-height: 2.5;
+}
+
+.description-block span {
+    background-color: var(--gold);
+    color: var(--background);
+    border-radius: 10px;
+    padding: 3px 10px;
+    margin: 20px 0;
+}
+
 
 .card {
-    padding: 20px;
+    background-color: var(--background)!important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .card:hover {
-    background-color: var(--grey);
+    background-color: var(--black)!important;
+    cursor:pointer;
 }
 
 .card:hover i {
@@ -153,14 +194,14 @@ figcaption {
 }
 
 .card-title {
-    font-size: 1.3rem;
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 
 .card-link {
-    display: block;
-    color: #007bff;
     text-decoration: none;
+    color: #007bff;
+    display: block;
 }
 
 .card-link:hover {
@@ -168,10 +209,10 @@ figcaption {
 }
 
 .logout-link {
-    float: right;
-    margin-top: 10px;
-    color: #007bff;
     text-decoration: none;
+    color: #007bff;
+    margin-top: 10px;
+    float: right;
 }
 
 .logout-link:hover {
@@ -180,35 +221,54 @@ figcaption {
 
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none; /* Non-prefixed version, currently                                  supported by Chrome, Edge, Opera and Firefox */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 
 .header-content {
-    justify-content: space-between;
-    flex-direction: column;
-    height: 70vh;
-    display: flex;
     position: sticky;
 }
 
-@media (min-width: 1024px) {
-    .header-content .row:nth-of-type(1) { 
-        top: 0;
-        position: sticky!important;
-     }
-    .header-content .row:nth-of-type(2) { 
-        bottom: 0;
-        position: sticky!important;
-     }
-
+@media (min-width: 992px) {
     .header-content {
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: 60%;
         position: fixed;
-        margin-right: 50%;
+        display: flex;
+        height: 70vh;
+    }
+    .header-content .row:nth-of-type(1) { 
+        position: sticky!important;
+        top: 0;
+    }
+    .header-content .row:nth-of-type(2) { 
+        position: sticky!important;
+        bottom: 0;
     }
 }
 
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding-inline-start: 0;
+}
+  
+li {
+    /* padding-left: 1em; */
+    text-indent: 0;
+}
+  
+li:before {
+    content: "→";
+    padding-right: 5px;
+}
+
+#about, #experience, #projects, #contact {
+    scroll-margin-top: 20.75vh;
+}
