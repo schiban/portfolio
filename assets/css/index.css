@@ -270,5 +270,5 @@ li:before {
 }
 
 #about, #experience, #projects, #contact {
-    scroll-margin-top: 20.75vh;
+    scroll-margin-top: calc(15vh + 2.7rem);
 }
