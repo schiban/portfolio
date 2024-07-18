@@ -7,22 +7,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Itera sobre cada grupo de elementos para alternar o idioma
             contentSwitches.forEach(function (contentSwitch) {
-                const portugalContents = contentSwitch.querySelectorAll('.portugal');
-                const englandContents = contentSwitch.querySelectorAll('.england');
+                const ptContents = contentSwitch.querySelectorAll('.pt');
+                const enContents = contentSwitch.querySelectorAll('.en');
 
                 // Verifica qual botão está selecionado
                 if (radio.value === 'pt') {
-                    portugalContents.forEach(function (element) {
+                    ptContents.forEach(function (element) {
                         element.style.display = 'block';
                     });
-                    englandContents.forEach(function (element) {
+                    enContents.forEach(function (element) {
                         element.style.display = 'none';
                     });
-                } else if (radio.value === 'uk') {
-                    portugalContents.forEach(function (element) {
+                } else if (radio.value === 'en') {
+                    ptContents.forEach(function (element) {
                         element.style.display = 'none';
                     });
-                    englandContents.forEach(function (element) {
+                    enContents.forEach(function (element) {
                         element.style.display = 'block';
                     });
                 }
