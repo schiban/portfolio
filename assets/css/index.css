@@ -183,7 +183,7 @@ figcaption {
     color:#adbdd1;
 }
 
-.card:hover svg {
+.card:hover svg, .card:hover i {
     filter: invert(90%) sepia(2%) saturate(5850%) hue-rotate(184deg) brightness(83%) contrast(96%);
 }
 
