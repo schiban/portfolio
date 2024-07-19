@@ -261,23 +261,23 @@ ul {
     list-style: none!important;
 }
   
-.header-content li {
+#nav li {
     padding: 15px 0 15px;
     font-size: 18px;
     transition-delay: 200ms linear;
 }
 
-.header-content li:before {
+#nav li:before {
     content: '›';
     padding-right: 15px;
 }
 
-.header-content li:hover:before {
+#nav li:hover:before {
     content: '›»';
     padding-right: 15px;
 }
 
-.header-content li > a {
+#nav li > a {
     color: var(--font);
     text-decoration: none;
 }
