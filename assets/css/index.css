@@ -154,23 +154,17 @@ figcaption {
     border-radius: 10px;
 }
 
-.description-block:hover {
-    background-color: var(--cards)!important;
-    cursor: pointer;
-}
-
-.description-block p {
+.tags {
     line-height: 2.5;
 }
 
-.description-block span {
+.tags span {
     background-color: var(--gold);
     color: var(--background);
     border-radius: 10px;
     padding: 3px 10px;
-    margin: 20px 0;
+    hyphens: none;
 }
-
 
 .card {
     background-color: var(--background)!important;
@@ -250,25 +244,49 @@ figcaption {
         position: sticky!important;
         bottom: 0;
     }
+    #about,
+    #experience,
+    #projects,
+    #contact {
+        scroll-margin-top: calc(15vh + 2.7rem);
+    }
+    .description-block:hover {
+        background-color: var(--cards)!important;
+        cursor: pointer;
+    }
 }
 
 ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    padding-inline-start: 0;
+    padding: 0!important;
+    list-style: none!important;
 }
   
-li {
-    /* padding-left: 1em; */
-    text-indent: 0;
-}
-  
-li:before {
-    content: "→";
-    padding-right: 5px;
+.header-content li {
+    padding: 15px 0 15px;
+    font-size: 18px;
+    transition-delay: 200ms linear;
 }
 
-#about, #experience, #projects, #contact {
-    scroll-margin-top: calc(15vh + 2.7rem);
+.header-content li:before {
+    content: '›';
+    padding-right: 15px;
+}
+
+.header-content li:hover:before {
+    content: '›»';
+    padding-right: 15px;
+}
+
+.header-content li > a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+.job-date {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+p {
+    font-size: 14px;
 }
