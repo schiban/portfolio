@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Verifica qual botão está selecionado
                 if (radio.value === 'pt') {
                     ptContents.forEach(function (element) {
-                        element.style.display = 'block';
+                        element.style.display = 'initial';
                     });
                     enContents.forEach(function (element) {
                         element.style.display = 'none';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.display = 'none';
                     });
                     enContents.forEach(function (element) {
-                        element.style.display = 'block';
+                        element.style.display = 'initial';
                     });
                 }
             });
