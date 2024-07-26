@@ -281,3 +281,28 @@ ul {
 p {
     font-size: 14px;
 }
+
+/* effect-shine */
+.effect-shine {
+    border-radius: 10px;
+}
+
+.effect-shine:hover,
+.tags span:hover {
+    background: linear-gradient(-75deg, #134B70 0%, #508C9B 100%);
+    color: white;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    transition-duration: 500ms;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
