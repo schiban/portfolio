@@ -31,7 +31,7 @@
     --grey:hsl(0, 0%, 50%);
     --pink:hsl(0, 94%, 67%);
     --blue:hsl(213, 100%, 79%);
-    --gold:hsl(221, 100%, 63%);
+    --gold:hsl(195, 85%, 41%);
 }
 * {
     font-family:'JetBrainsMono';
@@ -57,11 +57,11 @@ h1 {
     text-align:center;
 }
 
-.input-filters, .en {
+input[name="filters"], .en {
     display: none;
 }
 
-.trigger-opt-item label{
+label[for*="check"] {
     display: inline-block;
     opacity: 0.5;
     cursor:pointer;
@@ -245,6 +245,20 @@ figcaption {
         background-color: var(--cards)!important;
         cursor: pointer;
     }
+    .effect-shine:hover,
+    .tags span:hover {
+        background: linear-gradient(-75deg, #134B70 0%, #1095c1 100%);
+        color: white;
+        -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+        -webkit-mask-size: 200%;
+        animation: shine 2s infinite;
+        transition-duration: 500ms;
+    }
+
+    @-webkit-keyframes shine {
+        from { -webkit-mask-position: 150% }
+        to { -webkit-mask-position: -50% }
+    }
 }
 
 ul {
@@ -282,27 +296,11 @@ p {
     font-size: 14px;
 }
 
-/* effect-shine */
 .effect-shine {
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
-.effect-shine:hover,
-.tags span:hover {
-    background: linear-gradient(-75deg, #134B70 0%, #508C9B 100%);
-    color: white;
-    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    -webkit-mask-size: 200%;
-    animation: shine 2s infinite;
-    transition-duration: 500ms;
-}
-
-@-webkit-keyframes shine {
-    from {
-        -webkit-mask-position: 150%;
-    }
-
-    to {
-        -webkit-mask-position: -50%;
-    }
+.full-line {
+    border-image: linear-gradient(0deg,#1095c1 5px,#0000 0) fill 0;
+    padding: 1px;
 }
